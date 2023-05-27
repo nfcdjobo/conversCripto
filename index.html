@@ -32,9 +32,9 @@
                         BITCOIN (BTC)
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="BTC">
-                        <li><a class="dropdown-item" href="#">Convertir en ETHERIUM</a></li>
-                        <li><a class="dropdown-item" href="#">Convertir en TRON</a></li>
-                        <li><a class="dropdown-item" href="#">Convertir en FCFA</a></li>
+                        <li><a class="dropdown-item" id="BTC-ETH" href="#">Convertir en ETHERIUM (ETH)</a></li>
+                        <li><a class="dropdown-item" id="BTC-USDT" href="#">Convertir en TRON (USDT)</a></li>
+                        <li><a class="dropdown-item" id="BTC-JPY" href="#">Convertir YEN JAPONAIS (JPY)</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,9 +44,9 @@
                         ETHERIUM (ETH)
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="ETH">
-                        <li><a class="dropdown-item" href="#">Convertir en BITCON (BTC)</a></li>
-                        <li><a class="dropdown-item" href="#">Convertir en TRON (USDT)</a></li>
-                        <li><a class="dropdown-item" href="#">Convertir en Franc CFA (XOF)</a></li>
+                        <li><a class="dropdown-item" id="ETH-BTC" href="#">Convertir en BITCON (BTC)</a></li>
+                        <li><a class="dropdown-item" id="ETH-USDT" href="#">Convertir en TRON (USDT)</a></li>
+                        <li><a class="dropdown-item" id="ETH-JPY" href="#">Convertir en YEN JAPONAIS (JPY)</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,25 +56,38 @@
                         TRON (USDT)
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="USDT">
-                        <li><a class="dropdown-item" href="#">Convertir en BITCON (BTC)</a></li>
-                        <li><a class="dropdown-item" href="#">Convertir en ETHERIUM (ETH)</a></li>
-                        <li><a class="dropdown-item" href="#">Convertir en Franc CFA (XOF)</a></li>
+                        <li><a class="dropdown-item" id="USDT-BTC" href="#">Convertir en BITCON (BTC)</a></li>
+                        <li><a class="dropdown-item" id="USDT-ETH" href="#">Convertir en ETHERIUM (ETH)</a></li>
+                        <li><a class="dropdown-item" id="USDT-JPY" href="#">Convertir en YEN JAPONAIS (JPY)</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Franc CFA (FCFA)
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="JPY" data-bs-toggle="dropdown" aria-expanded="false">
+                        YEN JAPONAIS (JPY)
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Convertir en BITCON (BTC)</a></li>
-                        <li><a class="dropdown-item" href="#">Convertir en ETHERIUM (ETH)</a></li>
-                        <li><a class="dropdown-item" href="#">Convertir en TRON (POLY)</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="JPY">
+                        <li><a class="dropdown-item" id="JPY-BTC" href="#">Convertir en BITCON (BTC)</a></li>
+                        <li><a class="dropdown-item" id="JPY-ETH" href="#">Convertir en ETHERIUM (ETH)</a></li>
+                        <li><a class="dropdown-item" id="JPY-USDT" href="#">Convertir en TRON (USDT)</a></li>
                     </ul>
                 </div>
             </div>
-            
+        </div>
+        <hr><br>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <button type="button" class="btn btn-outline-primary" id="premier"></button> =
+                        <button type="button" class="btn btn-outline-success" id="deuxieme"></button>
+                    </div>
+                        
+                    <div class="col-lg-5">GH</div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR -->
